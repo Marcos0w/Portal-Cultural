@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato | Portal Cultural</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="artista.html">Artistas</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <main class="contato-simples">
+        <section class="contato-box">
+            <h2>Fale Conosco</h2>
+            <p>Preencha os campos abaixo para abrir seu e-mail.</p>
+            <form id="culturalForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Nome Completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+                </div>
+                <select id="subject" class="custom-select" required>
+                    <option value="" disabled selected>Assunto</option>
+                    <option value="Parceria Cultural">Parceria / Divulgação</option>
+                    <option value="Sugestão de Evento">Sugestão de Evento</option>
+                    <option value="Dúvida sobre o Portal">Dúvidas</option>
+                </select>
+                <textarea id="message" placeholder="Escreva sua mensagem aqui..." rows="4" required></textarea>
+                <button type="submit">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Enviar via E-mail
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>PORTAL CULTURAL &copy; 2026</footer>
+    <script src="script.js"></script>
+</body>
+</html>
